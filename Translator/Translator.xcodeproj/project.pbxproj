@@ -15,6 +15,13 @@
 		CF427D721C4D4A4300C942FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF427D701C4D4A4300C942FC /* LaunchScreen.storyboard */; };
 		CF427D7D1C4D4A4300C942FC /* TranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF427D7C1C4D4A4300C942FC /* TranslatorTests.m */; };
 		CF427D881C4D4A4300C942FC /* TranslatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF427D871C4D4A4300C942FC /* TranslatorUITests.m */; };
+		CF427D961C4D4AF500C942FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF427D951C4D4AF500C942FC /* AudioToolbox.framework */; };
+		CF427D981C4D4AFF00C942FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF427D971C4D4AFF00C942FC /* AVFoundation.framework */; };
+		CF427D9E1C4D4B1D00C942FC /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF427D9A1C4D4B1D00C942FC /* AcousticModelEnglish.bundle */; };
+		CF427D9F1C4D4B1D00C942FC /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF427D9B1C4D4B1D00C942FC /* AcousticModelSpanish.bundle */; };
+		CF427DA01C4D4B1D00C942FC /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF427D9C1C4D4B1D00C942FC /* OpenEars.framework */; };
+		CF427DA11C4D4B1D00C942FC /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF427D9D1C4D4B1D00C942FC /* Slt.framework */; };
+		CF427DA41C4D546000C942FC /* WordsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF427DA31C4D546000C942FC /* WordsListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,14 @@
 		CF427D831C4D4A4300C942FC /* TranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF427D871C4D4A4300C942FC /* TranslatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorUITests.m; sourceTree = "<group>"; };
 		CF427D891C4D4A4300C942FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF427D951C4D4AF500C942FC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CF427D971C4D4AFF00C942FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CF427D9A1C4D4B1D00C942FC /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		CF427D9B1C4D4B1D00C942FC /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		CF427D9C1C4D4B1D00C942FC /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		CF427D9D1C4D4B1D00C942FC /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		CF427DA21C4D546000C942FC /* WordsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsListVC.h; sourceTree = "<group>"; };
+		CF427DA31C4D546000C942FC /* WordsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsListVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF427DA11C4D4B1D00C942FC /* Slt.framework in Frameworks */,
+				CF427D981C4D4AFF00C942FC /* AVFoundation.framework in Frameworks */,
+				CF427D961C4D4AF500C942FC /* AudioToolbox.framework in Frameworks */,
+				CF427DA01C4D4B1D00C942FC /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +104,7 @@
 				CF427D7B1C4D4A4300C942FC /* TranslatorTests */,
 				CF427D861C4D4A4300C942FC /* TranslatorUITests */,
 				CF427D601C4D4A4200C942FC /* Products */,
+				CF427D991C4D4B1D00C942FC /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +123,8 @@
 			children = (
 				CF427D651C4D4A4200C942FC /* AppDelegate.h */,
 				CF427D661C4D4A4200C942FC /* AppDelegate.m */,
+				CF427DA21C4D546000C942FC /* WordsListVC.h */,
+				CF427DA31C4D546000C942FC /* WordsListVC.m */,
 				CF427D681C4D4A4200C942FC /* ViewController.h */,
 				CF427D691C4D4A4200C942FC /* ViewController.m */,
 				CF427D6B1C4D4A4300C942FC /* Main.storyboard */,
@@ -138,6 +160,19 @@
 				CF427D891C4D4A4300C942FC /* Info.plist */,
 			);
 			path = TranslatorUITests;
+			sourceTree = "<group>";
+		};
+		CF427D991C4D4B1D00C942FC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CF427D951C4D4AF500C942FC /* AudioToolbox.framework */,
+				CF427D971C4D4AFF00C942FC /* AVFoundation.framework */,
+				CF427D9A1C4D4B1D00C942FC /* AcousticModelEnglish.bundle */,
+				CF427D9B1C4D4B1D00C942FC /* AcousticModelSpanish.bundle */,
+				CF427D9C1C4D4B1D00C942FC /* OpenEars.framework */,
+				CF427D9D1C4D4B1D00C942FC /* Slt.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF427D721C4D4A4300C942FC /* LaunchScreen.storyboard in Resources */,
+				CF427D9F1C4D4B1D00C942FC /* AcousticModelSpanish.bundle in Resources */,
+				CF427D9E1C4D4B1D00C942FC /* AcousticModelEnglish.bundle in Resources */,
 				CF427D6F1C4D4A4300C942FC /* Assets.xcassets in Resources */,
 				CF427D6D1C4D4A4300C942FC /* Main.storyboard in Resources */,
 			);
@@ -270,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF427DA41C4D546000C942FC /* WordsListVC.m in Sources */,
 				CF427D6A1C4D4A4200C942FC /* ViewController.m in Sources */,
 				CF427D671C4D4A4200C942FC /* AppDelegate.m in Sources */,
 				CF427D641C4D4A4200C942FC /* main.m in Sources */,
@@ -413,6 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = Translator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalton.Translator;
@@ -424,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = Translator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalton.Translator;
